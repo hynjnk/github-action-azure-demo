@@ -29,7 +29,9 @@ jobs:
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
 
-      - name: Upload a apk file to Azure Storage Blob using Azure CLI
+      - name: Upload to Azure Storage Blob
+        # Upload a apk file to Azure Storage Blob using Azure CLI
+        # Blob URL: https://cliniccallrobo.blob.core.windows.net/blob-upload-test/demo.apk
         uses: azure/CLI@v1
         with:
           azcliversion: 2.23.0
