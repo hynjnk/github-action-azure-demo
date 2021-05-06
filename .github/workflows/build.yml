@@ -31,7 +31,7 @@ jobs:
 
       - name: Upload to Azure Storage Blob
         # Upload a apk file to Azure Storage Blob using Azure CLI
-        # Blob URL: https://cliniccallrobo.blob.core.windows.net/blob-upload-test/demo.apk
+        # Blob URL: https://{account-name}.blob.core.windows.net/{container-name}/{name}
         uses: azure/CLI@v1
         with:
           azcliversion: 2.23.0
